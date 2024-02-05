@@ -15,7 +15,7 @@ body {
 header {
     background-color: #020202;
     color :rgb(250, 250, 250);
-    height: 245px; 
+    height: 250px; 
 }
 
 header h1 {
@@ -37,7 +37,14 @@ header img {
     width: 20%;
 }
 
-
+/* Index*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
 
 
 /* main */
@@ -83,44 +90,71 @@ main {
 
 /*  turnos */
 
-.turnoform , .vehiculo {
+.persona ,.vehiculo {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    align-items: center;
+    
 }
 
-.vehiculo {
-    text-align: right;
+.vehiculo{
+    flex-direction: row;
+    justify-content: center;
 }
+
+.formulario{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+}
+.formulario-auto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.formulariotel {
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 100%;
+}
+.cod {
+width: 20%;
+}
+.tel {
+    height: 100%;
+    width: 30%;
+}
+
+.buttons {
+display: flex;
+flex-direction: row-reverse;
+gap: 15px
+;
+}
+
 
 
 /* acc&mods */
 
-h3 {
-font-family: monospace;
-font-size: 35px;
-}
-
 .lado1 {
     text-align: left;
     font-family: cursive;
-
-}
-
-
-
-
-.amarok {
-    height: 300px;
-}
-/* footer */
-
-footer {
-    background-color: #000000 ;
-    text-align: right; 
-}
-
-footer img {
-width: 4%;
 }
 
 .containeracc {
@@ -155,29 +189,44 @@ width: 4%;
 flex-direction: row-reverse;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.titulo {
+    font-size: 30px;
+    width: 40%;
+    font-family: monospace;
+font-size: 35px;
+}
 
 .turnoform {
     display: grid;
     align-items: center;
 }
+
+
+/* footer */
+
+footer {
+    background-color: #000000 ; 
+}
+
+.footerbox{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+
+
+footer img {
+width: 100px;
+height: 100%;
+}
+ .b1 {
+    justify-content: initial;
+ }
