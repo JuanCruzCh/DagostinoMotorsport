@@ -177,6 +177,8 @@ gap: 15px
 
 .imgacc {
     width: auto;
+    filter: blur(5px);
+    transition: 1s;
 }
 
 .containeracc img {
@@ -200,10 +202,7 @@ font-size: 35px;
     display: grid;
     align-items: center;
 }
-.card-articulo:hover{
-    background-color: #302a2ab5;
-    color:rgb(224, 74, 74);
-}
+
 
 
 /* footer */
@@ -246,15 +245,64 @@ height: 100%;
 
 
  /* pseudoclases */
-
-a:active {
-    color: rgb(228, 10, 94);
+ /*acc_mods*/
+.containeracc :nth-child(even) {
+    flex-direction: row-reverse;
+    }
+.card-articulo:hover{
+    background-color: #302a2ab5;
+    color:rgb(224, 74, 74);
+}
+.card-articulo:hover img {
+    filter: blur(0);
 }
 
-a:visited {
-    color: red;
+/*turnos*/
+.boton:hover{
+    background-color: rgb(9, 9, 9);
+    color: white;
+    box-shadow: 2px 2px;
 }
 
-img:hover {
-
+/*media queries*/
+@media (max-width:600px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainrepro {
+        display: flex;
+        flex-direction: initial;
+    }
+    .persona , .vehiculo {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .containeracc {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .card-articulo {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 15px;
+    }
+    .imgacc {
+        filter: blur(0);
+        width: auto;
+    }
+    .containeracc img {
+        width: 70%;
+        height: 50%;
+        object-fit: cover;
+    }
+    .footergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100px;
+        height: 100px;
+    }
 }
