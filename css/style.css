@@ -158,7 +158,7 @@ gap: 15px
 }
 
 .containeracc {
-    display: grid;
+    display: grid;    
     grid-template-columns: (3, 1fr);
     gap: 10px;
     padding: 10px;
@@ -200,6 +200,10 @@ font-size: 35px;
     display: grid;
     align-items: center;
 }
+.card-articulo:hover{
+    background-color: #302a2ab5;
+    color:rgb(224, 74, 74);
+}
 
 
 /* footer */
@@ -218,7 +222,7 @@ footer {
 
 .footergrid {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 2fr 2fr;
 }
 
 
@@ -227,6 +231,30 @@ footer img {
 width: 100px;
 height: 100%;
 }
- .b1 {
+
+.b1 {
     justify-content: initial;
- }
+}
+.b2 {
+    justify-content: end;
+}
+
+
+
+
+
+
+
+ /* pseudoclases */
+
+a:active {
+    color: rgb(228, 10, 94);
+}
+
+a:visited {
+    color: red;
+}
+
+img:hover {
+
+}
