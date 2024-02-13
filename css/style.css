@@ -7,7 +7,6 @@
 body {
     background-color: rgb(202, 69, 69);
     font-family: 'Times New Roman', Times, serif;
-
 }
 
 
@@ -167,16 +166,18 @@ gap: 15px
 }
 
 .card-articulo {
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     height: 250px;
+    padding: 10px;
 }
 
 .imgacc {
-    width: auto;
+    width: 100%;
     filter: blur(5px);
     transition: 1s;
 }
@@ -203,6 +204,27 @@ font-size: 35px;
     align-items: center;
 }
 
+/* repro*/
+.mainrepro{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+}
+.repro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.reprotxt {
+    width: 50%;
+    padding: 20px;
+}
+
+.carousel {
+    width: 50%;
+    height: 700px;
+    padding: 20px;
+}
 
 
 /* footer */
@@ -266,9 +288,24 @@ height: 100%;
 
 /*media queries*/
 @media (max-width:600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: #020202;
+        color :rgb(250, 250, 250);
+        height: 100%; 
+    }
+    header img {
+        width: 25%;
+    }
     .links {
         display: flex;
         flex-direction: column;
+        font-size: 10px;
+        
     }
     .mainrepro {
         display: flex;
@@ -305,4 +342,12 @@ height: 100%;
         width: 100px;
         height: 100px;
     }
+    .contactomain {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 5px;
+        }
 }
