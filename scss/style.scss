@@ -1,0 +1,61 @@
+//Reset
+@import 'base/vars';
+@import 'base/reset';
+
+//components
+@import 'components/navbar';
+@import 'components/footer';
+
+//layouts
+@import 'layout/index';
+@import 'layout/turnos';
+@import 'layout/acc_mods';
+@import 'layout/repro';
+@import 'layout/contacto';
+
+body {
+  background-color: $maincolor;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+@media (min-width:600px) and (max-width:900px) {
+  main {
+    padding: 20px;
+  }
+
+
+}
+
+@media (max-width:600px) {
+
+  
+
+  header {
+    background-color: #020202;
+    color: rgb(250, 250, 250);
+    height: 100%;
+  }
+
+  header img {
+    width: 25%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+  }
+  /* turnos*/
+  /*acc*/
+
+  
+
+  
+
+  
+}
+
+
+/*# sourceMappingURL=style.css.map */

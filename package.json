@@ -1,0 +1,14 @@
+{
+  "name": "dagostino",
+  "version": "1.0.0",
+  "description": "Las paginas responsive son Acc_mods y Turnos, \r Juan Cruz Chaves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

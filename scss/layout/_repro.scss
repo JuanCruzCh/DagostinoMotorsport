@@ -1,0 +1,32 @@
+.listadorepro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 20px;
+    align-content: center;
+
+    .listarepro {
+        list-style-type: disc;
+    }
+
+    .reprotxt {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .carousel {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.listadorepro {
+    @media (min-width:768px) and (max-width:900px){
+        padding: 20px;
+    }
+    @media (max-width:767px) {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}

@@ -1,0 +1,69 @@
+header {
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    height: auto;
+    padding: 10px;
+
+    h1 {
+        font-family: 'roboto' sans-serif;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 75px
+    }
+
+    img {
+        width: 20%;
+    }
+
+    .links-desktop {
+
+        list-style-type: none;
+        text-align: right;
+        color: rgb(255, 0, 0);
+        font-family: 'roboto' sans-serif;
+        font-weight: bolder;
+        font-size: 25px;
+
+        .nav-item {
+            border: white 2px solid;
+            border-radius: 15px;
+
+        }
+
+        .nav-item:hover {
+            background-color: gray;
+        }
+    }
+
+    .links-mobile {
+        display: none;
+
+        .btn-nav {
+            display: none;
+        }
+    }
+    /*Mediaqueries*/
+    @media (max-width:767px ) {
+        .links-desktop {
+            display: none;
+        }
+        .links-mobile{
+            display: flex;
+            justify-content: end;
+            .btn-nav{
+                display: inline-block;
+                background-color: rgb(95, 16, 16);
+                font-size: 30px;
+
+            .inbtn {
+                &.offcanvas{
+                
+                background-color: #520101;
+                }
+            }
+            
+            }
+        }
+    }
+}
+
