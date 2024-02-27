@@ -158,20 +158,21 @@ footer .footergrid .b2 {
 
 /*mediaqueries*/
 @media (min-width: 768px) and (max-width: 900px) {
-  .cartabienvenida {
+  .hero .cartabienvenida {
     padding: 20px;
   }
 }
 @media (max-width: 767px) {
-  .cartabienvenida {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 600px;
+  .hero .cartabienvenida {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
   }
-  .cartabienvenida .hometxt {
+  .hero .cartabienvenida .hometxt {
     font-size: 20px;
   }
-  .cartabienvenida .frentetaller {
+  .hero .cartabienvenida .frentetaller {
     width: 100%;
   }
 }

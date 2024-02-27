@@ -22,15 +22,15 @@
         }
 }
 /*mediaqueries*/
-.cartabienvenida {
+.hero .cartabienvenida {
 @media (min-width:768px) and (max-width:900px){
     padding: 20px;
 }
 @media (max-width:767px) {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 600px;
-
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
     .hometxt{
         font-size: 20px;
     }
