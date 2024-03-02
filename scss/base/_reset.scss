@@ -2,22 +2,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 main {
   padding: 50px 20px;
+  background: rgb(71,68,68);
+background: radial-gradient(circle, rgba(71,68,68,1) 0%, rgba(71,68,68,1) 0%, rgba(157,33,33,1) 100%);
   h2 {
     text-align: center;
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+   
     text-decoration: underline;
   }
   .links-desktop, .links-mobile {
   ul {
     text-align: left;
     font-size: 35px;
-    font-family: 'Roboto', sans-serif;
+    
     text-decoration: underline;
     color: rgb(48, 40, 40);
     list-style-type: none;

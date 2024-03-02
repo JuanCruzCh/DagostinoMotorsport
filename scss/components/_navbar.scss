@@ -42,29 +42,46 @@ header {
             display: none;
         }
     }
+
     /*Mediaqueries*/
-    @media (max-width:767px ) {
+    @media (max-width:767px) {
         .links-desktop {
             display: none;
         }
-        .links-mobile{
+
+        .links-mobile {
             display: flex;
-            flex-direction: column;
-            justify-content: end;
-            .btn-nav{
+            width: 50px;
+            backdrop-filter: blur;
+
+            .btn-nav {
                 display: inline-block;
+                justify-content: end;
                 background-color: rgb(95, 16, 16);
                 font-size: 30px;
-
-            .inbtn {
-                &.offcanvas{
-                
-                background-color: #520101;
-                }
             }
-            
+
+            .offcanvas-header {
+                background-color: #584c4c;
+            }
+
+            .offcanvas-body {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(157, 33, 33, 1) 0%, rgba(0, 0, 0, 1) 86%);
+
+                display: grid;
+                grid-template-columns: 100px;
+                justify-content: end;
+
+
+                .nav-item {
+                    border: grey 1px solid;
+                    border-radius: 15px;
+                    font-size: 40px;
+                    padding: 5px;
+                }
             }
         }
     }
-}
 
+}
