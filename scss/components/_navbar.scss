@@ -49,6 +49,7 @@ header {
         }
         .links-mobile{
             display: flex;
+            flex-direction: column;
             justify-content: end;
             .btn-nav{
                 display: inline-block;
