@@ -47,38 +47,46 @@ header {
     @media (max-width:767px) {
         .links-desktop {
             display: none;
+            align-items: end;
         }
 
         .links-mobile {
             display: flex;
-            width: 50px;
-            backdrop-filter: blur;
+            justify-content: flex-end;
+
 
             .btn-nav {
-                display: inline-block;
-                justify-content: end;
+                display: flex;
+                flex-direction: row;
                 background-color: rgb(95, 16, 16);
                 font-size: 30px;
             }
 
             .offcanvas-header {
-                background-color: #584c4c;
+                background-color: #000000;
+                color: white;
+                font-size: 30px;
             }
 
             .offcanvas-body {
-                background: rgb(0, 0, 0);
-                background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(157, 33, 33, 1) 0%, rgba(0, 0, 0, 1) 86%);
-
+                background: lightslategrey;
                 display: grid;
                 grid-template-columns: 100px;
                 justify-content: end;
-
+                
+                .nav {
+                    gap: 10px;
+                }
 
                 .nav-item {
-                    border: grey 1px solid;
+                    border: black 2px solid;
                     border-radius: 15px;
-                    font-size: 40px;
+                    font-size: 20px;
                     padding: 5px;
+                    
+                    .nav-link{
+                    color: white;
+                    }
                 }
             }
         }

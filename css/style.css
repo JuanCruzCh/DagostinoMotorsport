@@ -6,8 +6,7 @@
 
 main {
   padding: 50px 20px;
-  background: rgb(71, 68, 68);
-  background: radial-gradient(circle, rgb(71, 68, 68) 0%, rgb(71, 68, 68) 0%, rgb(157, 33, 33) 100%);
+  background: rgba(221, 5, 5, 0.683);
 }
 main h2 {
   text-align: center;
@@ -62,33 +61,40 @@ header .links-mobile .btn-nav {
 @media (max-width: 767px) {
   header .links-desktop {
     display: none;
+    align-items: end;
   }
   header .links-mobile {
     display: flex;
-    width: 50px;
-    backdrop-filter: blur;
+    justify-content: flex-end;
   }
   header .links-mobile .btn-nav {
-    display: inline-block;
-    justify-content: end;
+    display: flex;
+    flex-direction: row;
     background-color: rgb(95, 16, 16);
     font-size: 30px;
   }
   header .links-mobile .offcanvas-header {
-    background-color: #584c4c;
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
   }
   header .links-mobile .offcanvas-body {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(157, 33, 33) 0%, rgb(0, 0, 0) 86%);
+    background: lightslategrey;
     display: grid;
     grid-template-columns: 100px;
     justify-content: end;
   }
+  header .links-mobile .offcanvas-body .nav {
+    gap: 10px;
+  }
   header .links-mobile .offcanvas-body .nav-item {
-    border: grey 1px solid;
+    border: black 2px solid;
     border-radius: 15px;
-    font-size: 40px;
+    font-size: 20px;
     padding: 5px;
+  }
+  header .links-mobile .offcanvas-body .nav-item .nav-link {
+    color: white;
   }
 }
 
