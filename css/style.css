@@ -442,6 +442,7 @@ footer .footergrid .b2 {
 }
 .listadorepro .listarepro {
   list-style-type: disc;
+  font-size: 30px;
 }
 .listadorepro .reprotxt {
   width: 100%;
